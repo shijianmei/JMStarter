@@ -1,15 +1,7 @@
 # JMStarter
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
+ios 启动器,解耦Appdelegate
 ## Installation
-
-JMStarter is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'JMStarter'
