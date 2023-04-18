@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'JMStarter_Example' do
+  pod 'JMStarter', :path => '../'
+
+  target 'JMStarter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

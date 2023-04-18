@@ -1,0 +1,6 @@
+framework module JMStarter {
+  umbrella header "JMStarter-umbrella.h"
+
+  export *
+  module * { export * }
+}

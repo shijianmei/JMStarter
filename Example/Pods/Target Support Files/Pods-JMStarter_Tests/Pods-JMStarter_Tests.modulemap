@@ -1,0 +1,6 @@
+framework module Pods_JMStarter_Tests {
+  umbrella header "Pods-JMStarter_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
