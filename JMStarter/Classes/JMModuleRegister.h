@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "JMAppLaunchBaseTask.h"
+#import "JMStarter.h"
 
 #define JMM_ADD_SECTION_DATA(sectname) __attribute((used, section("__DATA," #sectname " ")))
 
@@ -16,6 +17,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JMModuleRegister : JMAppLaunchBaseTask
+
 @end
 
 NS_ASSUME_NONNULL_END

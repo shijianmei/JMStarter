@@ -46,10 +46,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 启动阶段
 - (JMLaunchStage)launchStage;
 
+@optional
 /// 指定启动任务的执行优先级
 - (JMLaunchPriority)priority;
 
-/// 指定启动任务的执行线程
+/// 指定启动任务的执行线程 ,默认为主线程
 - (JMLaunchThread)threadForRunIn;
 
 @end

@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <JMStarter/JMStarter.h>
+#import "JMLaunchProtocol.h"
 
 @interface JMAppLaunchBaseTask : NSObject <JMLaunchProtocol>
 

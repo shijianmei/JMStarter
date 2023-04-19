@@ -7,6 +7,8 @@
 //
 
 #import "JMViewController.h"
+#import "ModuleService/ModuleAProtocol.h"
+#import <JMStarter/JMModuleMediator.h>
 
 @interface JMViewController ()
 
@@ -17,7 +19,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor yellowColor];
+    self.title = @"首页";
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [[JMModuleMediator implObjForProtocol: @protocol(ModuleAProtocol)] testFun];
 }
 
 - (void)didReceiveMemoryWarning

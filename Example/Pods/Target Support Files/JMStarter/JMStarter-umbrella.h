@@ -10,6 +10,15 @@
 #endif
 #endif
 
+#import "JMAppLaunchBaseTask.h"
+#import "JMLaunchContext.h"
+#import "JMLaunchProtocol.h"
+#import "JMModuleBaseProtocol.h"
+#import "JMModuleMediator.h"
+#import "JMModuleRegister.h"
+#import "JMStarter.h"
+#import "JMMap.h"
+#import "JMMapNode.h"
 
 FOUNDATION_EXPORT double JMStarterVersionNumber;
 FOUNDATION_EXPORT const unsigned char JMStarterVersionString[];

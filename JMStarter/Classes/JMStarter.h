@@ -14,8 +14,6 @@
 #define JMLAUNCH_REGISTER(task) \
     char* k##task##_register JML_ADD_SECTION_DATA(JMStarter) = "" #task "";
 
-#define JMLocalLaunchConfigName @"JMLaunchTask"
-
 NS_ASSUME_NONNULL_BEGIN
 
 extern NSArray<NSString*>* JMLaunchLoadConfiguration(const char* sectionName);
@@ -25,7 +23,7 @@ extern NSArray<NSString*>* JMLaunchLoadConfiguration(const char* sectionName);
 @property (nonatomic, strong) JMLaunchContext* context;
 
 + (instancetype)sharedLauncher;
-
+  
 /// 执行某一阶段的任务
 /// - Parameter stage: 阶段
 - (void)performTasks:(JMLaunchStage)stage;

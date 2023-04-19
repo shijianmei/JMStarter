@@ -1,5 +1,5 @@
 PODS:
-  - JMStarter (0.1.0)
+  - JMStarter (1.0.0)
 
 DEPENDENCIES:
   - JMStarter (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JMStarter: 788cbde492023408ae4a42aeebdb1f61f8256af3
+  JMStarter: d31d178947a8faab184362608451e563e8034e45
 
 PODFILE CHECKSUM: 867eb2dfb9f7485323dcee27b78cb4da3358bb22
 

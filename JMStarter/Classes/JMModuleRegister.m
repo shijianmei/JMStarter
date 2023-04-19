@@ -62,25 +62,18 @@ NSArray<NSString*>* BHReadConfiguration(char* sectionName, const struct mach_hea
 }
 
 JMLAUNCH_REGISTER(JMModuleRegister)
-
 @interface JMModuleRegister ()
 
 @end
 
-/// TODO: 重新命名
 @implementation JMModuleRegister
 
 - (void)executeAction {
     _dyld_register_func_for_add_image(dyld_callback);
 }
 
-- (BOOL)isExcutedImmediately {
-    return YES;
-}
-
 /// 启动阶段
 - (JMLaunchStage)launchStage {
     return JMLaunchStage_Constructor;
 }
-
 @end

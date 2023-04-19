@@ -7,12 +7,25 @@
 //
 
 #import "JMAppDelegate.h"
+#import <JMStarter/JMStarter.h>
+#import <JMStarter/JMLaunchProtocol.h>
+#import "JMViewController.h"
 
 @implementation JMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[JMStarter sharedLauncher] performTasks:JMLaunchStage_DidFinishLaunchingBeforeHomeRender];
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    JMViewController *vc = [JMViewController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+
+    
+    [[JMStarter sharedLauncher] performTasks:JMLaunchStage_DidFinishLaunchingAfterHomeRender];
     return YES;
 }
 

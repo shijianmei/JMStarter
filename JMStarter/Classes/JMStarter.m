@@ -18,35 +18,72 @@
 const char* kJMStarterSectionName = "JMStarter";
 const NSInteger JMMaxConcurrentOperationCount = 6;
 
-NSArray<NSString*>* JMLaunchLoadConfiguration(const char* sectionName)
-{
-    NSMutableArray* configs = [NSMutableArray array];
-    
-    Dl_info info;
-    dladdr(JMLaunchLoadConfiguration, &info);
-    
-#ifndef __LP64__
-    const struct mach_header* mhp = (struct mach_header*)info.dli_fbase;
-    unsigned long size = 0;
-    uint32_t* memory = (uint32_t*)getsectiondata(mhp, SEG_DATA, sectionName, &size);
-#else /* defined(__LP64__) */
-    const struct mach_header_64* mhp = (struct mach_header_64*)info.dli_fbase;
-    unsigned long size = 0;
-    uint64_t* memory = (uint64_t*)getsectiondata(mhp, SEG_DATA, sectionName, &size);
-#endif /* defined(__LP64__) */
-    
-    unsigned long counter = size / sizeof(void*);
-    for (int idx = 0; idx < counter; ++idx) {
-        char* string = (char*)memory[idx];
-        @autoreleasepool {
-            NSString *configName = [NSString stringWithUTF8String:string];
-            if (configName) {
-                [configs addObject:configName];
-            }
+//NSArray<NSString*>* JMLaunchLoadConfiguration(const char* sectionName)
+//{
+//    NSMutableArray* configs = [NSMutableArray array];
+//
+//    Dl_info info;
+//    dladdr(JMLaunchLoadConfiguration, &info);
+//
+//#ifndef __LP64__
+//    const struct mach_header* mhp = (struct mach_header*)info.dli_fbase;
+//    unsigned long size = 0;
+//    uint32_t* memory = (uint32_t*)getsectiondata(mhp, SEG_DATA, sectionName, &size);
+//#else /* defined(__LP64__) */
+//    const struct mach_header_64* mhp = (struct mach_header_64*)info.dli_fbase;
+//    unsigned long size = 0;
+//    uint64_t* memory = (uint64_t*)getsectiondata(mhp, SEG_DATA, sectionName, &size);
+//#endif /* defined(__LP64__) */
+//
+//    unsigned long counter = size / sizeof(void*);
+//    for (int idx = 0; idx < counter; ++idx) {
+//        char* string = (char*)memory[idx];
+//        @autoreleasepool {
+//            NSString *configName = [NSString stringWithUTF8String:string];
+//            if (configName) {
+//                [configs addObject:configName];
+//            }
+//        }
+//    }
+//
+//    return configs;
+//}
+
+NSArray<NSString *>* JMLaunchLoadConfiguration(const char *sectionName){
+    #ifndef __LP64__
+        const struct mach_header *mhp = NULL;
+    #else
+        const struct mach_header_64 *mhp = NULL;
+    #endif
+        
+        NSMutableArray *configs = [NSMutableArray array];
+        Dl_info info;
+        if (mhp == NULL) {
+            dladdr(JMLaunchLoadConfiguration, &info);
+    #ifndef __LP64__
+            mhp = (struct mach_header*)info.dli_fbase;
+    #else
+            mhp = (struct mach_header_64*)info.dli_fbase;
+    #endif
         }
-    }
-    
-    return configs;
+        
+    #ifndef __LP64__
+        unsigned long size = 0;
+     // 找到之前存储的数据段的一片内存
+        uint32_t *memory = (uint32_t*)getsectiondata(mhp, SEG_DATA, sectionName, & size);
+    #else /* defined(__LP64__) */
+        unsigned long size = 0;
+        uint64_t *memory = (uint64_t*)getsectiondata(mhp, SEG_DATA, sectionName, & size);
+    #endif /* defined(__LP64__) */
+        
+        for(int idx = 0; idx < size/sizeof(void*); ++idx){
+            char *string = (char*)memory[idx];
+            // 把特殊段里面的数据都转换成字符串存入数组中
+            NSString *str = [NSString stringWithUTF8String:string];
+            if(!str)continue;
+            if(str) [configs addObject:str];
+        }
+        return configs;
 }
 
 __attribute__((constructor)) static void constructJMStarter(void)
@@ -81,7 +118,6 @@ __attribute__((constructor)) static void constructJMStarter(void)
         NSArray<NSString*>* registerTaskNames = JMLaunchLoadConfiguration(kJMStarterSectionName);
         NSMutableArray *taskNames = [NSMutableArray array];
         [taskNames addObjectsFromArray:registerTaskNames];
-        
         for (NSString *name in taskNames) {
             [launcher registerLaunchTaskName:name];
         }
