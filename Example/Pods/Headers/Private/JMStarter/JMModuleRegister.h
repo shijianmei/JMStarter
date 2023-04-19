@@ -1,0 +1,1 @@
+../../../../../JMStarter/Classes/JMModuleRegister.h

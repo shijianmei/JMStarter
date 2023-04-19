@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C3B06107DD396ABC8D028E2 /* Pods_JMStarter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACE1887F3BCC8BB635094FD /* Pods_JMStarter_Tests.framework */; };
-		330F60837B03620259201B3A /* Pods_JMStarter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD756E5DE162519CC8C11AAC /* Pods_JMStarter_Example.framework */; };
-		44CF0DB129EE9F3F007814D6 /* JMLaunchTask1.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DB029EE9F3F007814D6 /* JMLaunchTask1.m */; };
-		44CF0DB829EF80E6007814D6 /* JMAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DB729EF80E6007814D6 /* JMAViewController.m */; };
-		44CF0DBB29EF810B007814D6 /* JMALaunchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DBA29EF810B007814D6 /* JMALaunchTask.m */; };
-		44CF0DBE29EF8135007814D6 /* JMAServiceImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DBD29EF8135007814D6 /* JMAServiceImp.m */; };
+		03A72EA9D438AA8C8C1A949C /* libPods-JMStarter_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE2CEC3DAC9B4AE28137CC0 /* libPods-JMStarter_Tests.a */; };
+		44CF0DCE29EFBB34007814D6 /* JMAServiceImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DCA29EFBB34007814D6 /* JMAServiceImp.m */; };
+		44CF0DCF29EFBB34007814D6 /* JMALaunchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DCB29EFBB34007814D6 /* JMALaunchTask.m */; };
+		44CF0DD029EFBB34007814D6 /* JMAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DCC29EFBB34007814D6 /* JMAViewController.m */; };
+		44CF0DD629EFBB50007814D6 /* JMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DD229EFBB50007814D6 /* JMViewController.m */; };
+		44CF0DD729EFBB50007814D6 /* JMLaunchTask1.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF0DD329EFBB50007814D6 /* JMLaunchTask1.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* JMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* JMAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* JMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* JMViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -28,6 +27,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E6E18855127BF86AA9A90986 /* libPods-JMStarter_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7BEF5EFAA878E062A92C82 /* libPods-JMStarter_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,19 +41,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0ACE1887F3BCC8BB635094FD /* Pods_JMStarter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMStarter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B6336031DE81A3C7789311 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3FBB8BED8E5548DD58D9D1CE /* Pods-JMStarter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMStarter_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JMStarter_Tests/Pods-JMStarter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4438A10B9DD9965EA7B9211A /* Pods-JMStarter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMStarter_Example.release.xcconfig"; path = "Target Support Files/Pods-JMStarter_Example/Pods-JMStarter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		44CF0DAF29EE9F3F007814D6 /* JMLaunchTask1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMLaunchTask1.h; sourceTree = "<group>"; };
-		44CF0DB029EE9F3F007814D6 /* JMLaunchTask1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMLaunchTask1.m; sourceTree = "<group>"; };
-		44CF0DB629EF80E6007814D6 /* JMAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMAViewController.h; path = Module_A/JMAViewController.h; sourceTree = "<group>"; };
-		44CF0DB729EF80E6007814D6 /* JMAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMAViewController.m; path = Module_A/JMAViewController.m; sourceTree = "<group>"; };
-		44CF0DB929EF810B007814D6 /* JMALaunchTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JMALaunchTask.h; path = Module_A/JMALaunchTask.h; sourceTree = "<group>"; };
-		44CF0DBA29EF810B007814D6 /* JMALaunchTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JMALaunchTask.m; path = Module_A/JMALaunchTask.m; sourceTree = "<group>"; };
-		44CF0DBC29EF8135007814D6 /* JMAServiceImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMAServiceImp.h; sourceTree = "<group>"; };
-		44CF0DBD29EF8135007814D6 /* JMAServiceImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMAServiceImp.m; sourceTree = "<group>"; };
 		44CF0DC029EF81D2007814D6 /* ModuleAProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleAProtocol.h; sourceTree = "<group>"; };
+		44CF0DC829EFBB34007814D6 /* JMALaunchTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMALaunchTask.h; path = Module_A/JMALaunchTask.h; sourceTree = "<group>"; };
+		44CF0DC929EFBB34007814D6 /* JMAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMAViewController.h; path = Module_A/JMAViewController.h; sourceTree = "<group>"; };
+		44CF0DCA29EFBB34007814D6 /* JMAServiceImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMAServiceImp.m; path = Module_A/JMAServiceImp.m; sourceTree = "<group>"; };
+		44CF0DCB29EFBB34007814D6 /* JMALaunchTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMALaunchTask.m; path = Module_A/JMALaunchTask.m; sourceTree = "<group>"; };
+		44CF0DCC29EFBB34007814D6 /* JMAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMAViewController.m; path = Module_A/JMAViewController.m; sourceTree = "<group>"; };
+		44CF0DCD29EFBB34007814D6 /* JMAServiceImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMAServiceImp.h; path = Module_A/JMAServiceImp.h; sourceTree = "<group>"; };
+		44CF0DD229EFBB50007814D6 /* JMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMViewController.m; sourceTree = "<group>"; };
+		44CF0DD329EFBB50007814D6 /* JMLaunchTask1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMLaunchTask1.m; sourceTree = "<group>"; };
+		44CF0DD429EFBB50007814D6 /* JMLaunchTask1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLaunchTask1.h; sourceTree = "<group>"; };
+		44CF0DD529EFBB50007814D6 /* JMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMViewController.h; sourceTree = "<group>"; };
+		4A7BEF5EFAA878E062A92C82 /* libPods-JMStarter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JMStarter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE2CEC3DAC9B4AE28137CC0 /* libPods-JMStarter_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JMStarter_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* JMStarter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMStarter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +67,6 @@
 		6003F59B195388D20070C39A /* JMStarter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JMStarter-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* JMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* JMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* JMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* JMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* JMStarter_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMStarter_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -76,7 +77,6 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB52251B2FC4DF57D4EB102A /* JMStarter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JMStarter.podspec; path = ../JMStarter.podspec; sourceTree = "<group>"; };
-		AD756E5DE162519CC8C11AAC /* Pods_JMStarter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMStarter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DEE3BBB736965365AE529A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B9C64430030308D5FD331A29 /* Pods-JMStarter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMStarter_Example.debug.xcconfig"; path = "Target Support Files/Pods-JMStarter_Example/Pods-JMStarter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BF1D8F6F3F44AF545F9EB627 /* Pods-JMStarter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMStarter_Tests.release.xcconfig"; path = "Target Support Files/Pods-JMStarter_Tests/Pods-JMStarter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				330F60837B03620259201B3A /* Pods_JMStarter_Example.framework in Frameworks */,
+				E6E18855127BF86AA9A90986 /* libPods-JMStarter_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2C3B06107DD396ABC8D028E2 /* Pods_JMStarter_Tests.framework in Frameworks */,
+				03A72EA9D438AA8C8C1A949C /* libPods-JMStarter_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +111,12 @@
 		44CF0DB229EF8080007814D6 /* Module_A */ = {
 			isa = PBXGroup;
 			children = (
-				44CF0DB629EF80E6007814D6 /* JMAViewController.h */,
-				44CF0DB729EF80E6007814D6 /* JMAViewController.m */,
-				44CF0DB929EF810B007814D6 /* JMALaunchTask.h */,
-				44CF0DBA29EF810B007814D6 /* JMALaunchTask.m */,
-				44CF0DBC29EF8135007814D6 /* JMAServiceImp.h */,
-				44CF0DBD29EF8135007814D6 /* JMAServiceImp.m */,
+				44CF0DC829EFBB34007814D6 /* JMALaunchTask.h */,
+				44CF0DCB29EFBB34007814D6 /* JMALaunchTask.m */,
+				44CF0DCD29EFBB34007814D6 /* JMAServiceImp.h */,
+				44CF0DCA29EFBB34007814D6 /* JMAServiceImp.m */,
+				44CF0DC929EFBB34007814D6 /* JMAViewController.h */,
+				44CF0DCC29EFBB34007814D6 /* JMAViewController.m */,
 			);
 			name = Module_A;
 			sourceTree = "<group>";
@@ -127,6 +127,17 @@
 				44CF0DC029EF81D2007814D6 /* ModuleAProtocol.h */,
 			);
 			path = ModuleService;
+			sourceTree = "<group>";
+		};
+		44CF0DD129EFBB50007814D6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				44CF0DD229EFBB50007814D6 /* JMViewController.m */,
+				44CF0DD329EFBB50007814D6 /* JMLaunchTask1.m */,
+				44CF0DD429EFBB50007814D6 /* JMLaunchTask1.h */,
+				44CF0DD529EFBB50007814D6 /* JMViewController.h */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		592A90E0E91900D7B53B53BE /* Pods */ = {
@@ -168,8 +179,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				AD756E5DE162519CC8C11AAC /* Pods_JMStarter_Example.framework */,
-				0ACE1887F3BCC8BB635094FD /* Pods_JMStarter_Tests.framework */,
+				4A7BEF5EFAA878E062A92C82 /* libPods-JMStarter_Example.a */,
+				4AE2CEC3DAC9B4AE28137CC0 /* libPods-JMStarter_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,15 +188,12 @@
 		6003F593195388D20070C39A /* Example for JMStarter */ = {
 			isa = PBXGroup;
 			children = (
+				44CF0DD129EFBB50007814D6 /* Main */,
 				44CF0DBF29EF8157007814D6 /* ModuleService */,
 				44CF0DB229EF8080007814D6 /* Module_A */,
 				6003F59C195388D20070C39A /* JMAppDelegate.h */,
 				6003F59D195388D20070C39A /* JMAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* JMViewController.h */,
-				6003F5A6195388D20070C39A /* JMViewController.m */,
-				44CF0DAF29EE9F3F007814D6 /* JMLaunchTask1.h */,
-				44CF0DB029EE9F3F007814D6 /* JMLaunchTask1.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -245,7 +253,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				E7F9122F5160738CA0F24545 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,24 +384,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E7F9122F5160738CA0F24545 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JMStarter_Example/Pods-JMStarter_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JMStarter/JMStarter.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JMStarter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JMStarter_Example/Pods-JMStarter_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -402,12 +391,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CF0DBB29EF810B007814D6 /* JMALaunchTask.m in Sources */,
-				44CF0DBE29EF8135007814D6 /* JMAServiceImp.m in Sources */,
-				44CF0DB129EE9F3F007814D6 /* JMLaunchTask1.m in Sources */,
+				44CF0DCF29EFBB34007814D6 /* JMALaunchTask.m in Sources */,
+				44CF0DD629EFBB50007814D6 /* JMViewController.m in Sources */,
 				6003F59E195388D20070C39A /* JMAppDelegate.m in Sources */,
-				44CF0DB829EF80E6007814D6 /* JMAViewController.m in Sources */,
-				6003F5A7195388D20070C39A /* JMViewController.m in Sources */,
+				44CF0DD729EFBB50007814D6 /* JMLaunchTask1.m in Sources */,
+				44CF0DD029EFBB34007814D6 /* JMAViewController.m in Sources */,
+				44CF0DCE29EFBB34007814D6 /* JMAServiceImp.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
