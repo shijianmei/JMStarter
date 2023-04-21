@@ -47,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		030A30E7D66D1246DE6A7179F5E620BC /* JMAppLaunchBaseTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JMAppLaunchBaseTask.m; path = JMStarter/Classes/JMAppLaunchBaseTask.m; sourceTree = "<group>"; };
-		0962543EF642BC8A3A2BD610367C64E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0962543EF642BC8A3A2BD610367C64E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2816887A3E0C5F9DE0D0BDD4C5B45190 /* Pods-JMStarter_Tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-JMStarter_Tests"; path = "libPods-JMStarter_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FABCB1A4BA9D029108CEC3C36BE978B /* Pods-JMStarter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMStarter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		301BA061AD96D00E7EECDF5768569AC8 /* Pods-JMStarter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMStarter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -61,19 +61,19 @@
 		5BB66E137A6378BC0CA1BADFCD935E43 /* JMModuleBaseProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JMModuleBaseProtocol.h; path = JMStarter/Classes/JMModuleBaseProtocol.h; sourceTree = "<group>"; };
 		6166F1E91AA59E5C6B79FE587540B5FE /* Pods-JMStarter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMStarter_Tests-dummy.m"; sourceTree = "<group>"; };
 		622B98AAAF42BF38B36163B2F666123B /* JMMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JMMap.h; sourceTree = "<group>"; };
-		729C08B4AE903CFE38C100F097B5EEA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		729C08B4AE903CFE38C100F097B5EEA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		86C0994DB63BC7FAB2353E1F3B95870F /* JMStarter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMStarter-prefix.pch"; sourceTree = "<group>"; };
 		89ED4003B51C3F3A98BF62318D06523C /* JMStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMStarter.release.xcconfig; sourceTree = "<group>"; };
 		92609D42A9DF6848538519A1E853CF34 /* JMMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JMMap.m; sourceTree = "<group>"; };
 		9D4358110EF4F86F0D71640FC3249DFA /* JMModuleMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JMModuleMediator.m; path = JMStarter/Classes/JMModuleMediator.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A731845A9B1D969ADC79AFE00C06A60A /* JMModuleMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JMModuleMediator.h; path = JMStarter/Classes/JMModuleMediator.h; sourceTree = "<group>"; };
 		B17CA7D5677FFB5D248B4C91CBC463E9 /* JMLaunchContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JMLaunchContext.m; path = JMStarter/Classes/JMLaunchContext.m; sourceTree = "<group>"; };
 		B8BA3FAF26961ECB4FED9FE50C49F2E1 /* JMModuleRegister.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JMModuleRegister.m; path = JMStarter/Classes/JMModuleRegister.m; sourceTree = "<group>"; };
 		C2FFDA0F96DE39485D599282939FF070 /* JMMapNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JMMapNode.m; sourceTree = "<group>"; };
 		C334C3D883F02E5CD53B7BDC2CC5DBBA /* Pods-JMStarter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JMStarter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D4E039557CA8E233D5BC52422053E8A7 /* Pods-JMStarter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMStarter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D70E510BB45AC7AD99C1D0ABE1EB52FC /* JMStarter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JMStarter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D70E510BB45AC7AD99C1D0ABE1EB52FC /* JMStarter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JMStarter.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		D835C0EDB449909DC24D7615C7A942E3 /* Pods-JMStarter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMStarter_Example-dummy.m"; sourceTree = "<group>"; };
 		DD363DCE19C0F8C27171F78CD9641600 /* JMModuleRegister.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JMModuleRegister.h; path = JMStarter/Classes/JMModuleRegister.h; sourceTree = "<group>"; };
 		DD453F33303624ACBC0766C1034F088C /* Pods-JMStarter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMStarter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -574,8 +574,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

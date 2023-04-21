@@ -18,37 +18,6 @@
 const char* kJMStarterSectionName = "JMStarter";
 const NSInteger JMMaxConcurrentOperationCount = 6;
 
-//NSArray<NSString*>* JMLaunchLoadConfiguration(const char* sectionName)
-//{
-//    NSMutableArray* configs = [NSMutableArray array];
-//
-//    Dl_info info;
-//    dladdr(JMLaunchLoadConfiguration, &info);
-//
-//#ifndef __LP64__
-//    const struct mach_header* mhp = (struct mach_header*)info.dli_fbase;
-//    unsigned long size = 0;
-//    uint32_t* memory = (uint32_t*)getsectiondata(mhp, SEG_DATA, sectionName, &size);
-//#else /* defined(__LP64__) */
-//    const struct mach_header_64* mhp = (struct mach_header_64*)info.dli_fbase;
-//    unsigned long size = 0;
-//    uint64_t* memory = (uint64_t*)getsectiondata(mhp, SEG_DATA, sectionName, &size);
-//#endif /* defined(__LP64__) */
-//
-//    unsigned long counter = size / sizeof(void*);
-//    for (int idx = 0; idx < counter; ++idx) {
-//        char* string = (char*)memory[idx];
-//        @autoreleasepool {
-//            NSString *configName = [NSString stringWithUTF8String:string];
-//            if (configName) {
-//                [configs addObject:configName];
-//            }
-//        }
-//    }
-//
-//    return configs;
-//}
-
 NSArray<NSString *>* JMLaunchLoadConfiguration(const char *sectionName){
     #ifndef __LP64__
         const struct mach_header *mhp = NULL;
