@@ -1,6 +1,6 @@
 # JMStarter
 
-ios 启动器,解耦Appdelegate,启动任务的创建,并发执行等及模块间的服务注册
+ios 启动器,解耦Appdelegate,启动任务的创建,并发执行，任务优先级控制及模块间的服务注册
 ## Installation
 
 ```ruby
